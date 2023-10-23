@@ -54,7 +54,7 @@ The software is tested in **Ubuntu 18.04** and **Ubuntu 20.04**.
 First, open a terminal and go to the "docker/" folder. Build the docker using command
 
 ```shell
-docker build --netword -t a1_cpp_ctrl_image .
+docker build --network host -t a1_cpp_ctrl_image .
 ```
 
 Then we start docker by the following command (you may add sudo depending on your docker permission setting.)
