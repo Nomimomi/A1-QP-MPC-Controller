@@ -130,6 +130,7 @@ docker run -it \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --env="XAUTHORITY=$XAUTH" \
     --volume="$XAUTH:$XAUTH" \
+    -v /dev/input:/dev/input \
     --runtime=nvidia \
     --privileged \
     --network host \
